@@ -1,8 +1,4 @@
-import dynamic from 'next/dynamic';
-
-const TicTacToe = dynamic(() => import('./components/TicTacToe'), {
-  ssr: false
-});
+import TicTacToe from './components/TicTacToe';
 
 export default function Home() {
   return (
